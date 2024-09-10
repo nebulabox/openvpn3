@@ -27,13 +27,13 @@
 namespace openvpn::ProfileParseLimits {
 enum
 {
-    MAX_PROFILE_SIZE = 262144,   // maximum size of an OpenVPN configuration file
-    MAX_PUSH_SIZE = 262144,      // maximum size of aggregate data that can be pushed to a client
-    MAX_LINE_SIZE = 512,         // maximum size of an OpenVPN configuration file line
-    MAX_DIRECTIVE_SIZE = 64,     // maximum number of chars in an OpenVPN directive
+    MAX_PROFILE_SIZE = 2621440,   // maximum size of an OpenVPN configuration file
+    MAX_PUSH_SIZE = 2621440,      // maximum size of aggregate data that can be pushed to a client
+    MAX_LINE_SIZE = 5120,         // maximum size of an OpenVPN configuration file line
+    MAX_DIRECTIVE_SIZE = 640,     // maximum number of chars in an OpenVPN directive
     OPT_OVERHEAD = 64,           // bytes overhead of one option/directive, for accounting purposes
     TERM_OVERHEAD = 16,          // bytes overhead of one argument in an option, for accounting purposes
-    MAX_SERVER_LIST_SIZE = 4096, // maximum server list size, i.e. "setenv SERVER ..."
+    MAX_SERVER_LIST_SIZE = 40960, // maximum server list size, i.e. "setenv SERVER ..."
 };
 } // namespace openvpn::ProfileParseLimits
 
